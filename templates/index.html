@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>香川大学吹奏楽団 楽譜管理</h1>
+
+<form action="/score_search" method="get"><br>
+    <button type="submit" class="btn btn-primary" style="margin-left : 5vw;">楽譜検索</button>        
+</form><br>
+<form action="/score_list" method="get">
+    <button type="submit" class="btn btn-primary" style="margin-left : 5vw;">楽譜一覧</button>        
+</form>
+<form action="/add" method="get"><br>
+    <button type="submit" class="btn btn-primary" style="margin-left : 5vw;">楽譜追加</button>
+</form><br>
+{% endblock %}
